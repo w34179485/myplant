@@ -5,6 +5,7 @@
             <li>
                 {{item.mer_name}}
                 <a href="{% url 'merchandise:remove' item.id %}">删除</a>
+                <a href="{% url 'merchandise:update' item.id %}">修改</a>
             </li>
         {% endfor %}
     </ul>

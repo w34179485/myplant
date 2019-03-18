@@ -4,6 +4,7 @@
         {% for item in merchandises %}
             <li>
                 {{item.mer_name}}
+                <a href="{% url 'merchandise:remove' item.id %}">删除</a>
             </li>
         {% endfor %}
     </ul>

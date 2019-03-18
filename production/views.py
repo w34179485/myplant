@@ -26,3 +26,6 @@ def merchandise_add(request):
 def merchandise_remove(request,p_id):
     merchandise = get_object_or_404(Merchandise,p_id)
     return HttpResponse(merchandise.mer_name)
+
+def merchandise_update(request,p_id):
+    return HttpResponse('update')
